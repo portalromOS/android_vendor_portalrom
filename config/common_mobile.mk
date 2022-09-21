@@ -9,10 +9,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Apps
 PRODUCT_PACKAGES += \
     Backgrounds \
-    Eleven \
     Etar \
     ExactCalculator \
-    Jelly \
     Profiles \
     Seedvault
 
