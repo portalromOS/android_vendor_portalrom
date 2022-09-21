@@ -13,6 +13,3 @@ PRODUCT_PACKAGES += \
     FontLatoOverlay \
     FontRubikOverlay
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
