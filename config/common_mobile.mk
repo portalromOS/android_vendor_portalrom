@@ -10,6 +10,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Backgrounds \
     Calendar	 \
+    SimpleCalendar	 \
     ExactCalculator \
     Profiles \
     Seedvault
