@@ -9,7 +9,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Apps
 PRODUCT_PACKAGES += \
     Backgrounds \
-    Calendar	 \
+    Etar	 \
     ExactCalculator \
     Profiles \
     Seedvault
