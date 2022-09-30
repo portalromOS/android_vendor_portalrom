@@ -261,12 +261,12 @@ function lineageremote()
         local PROJECT=$REMOTE
     fi
 
-    local LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
+    local LINEAGE_USER=$(git config --get review.review.portalrom.org.username)
     if [ -z "$LINEAGE_USER" ]
     then
-        git remote add lineage ssh://review.lineageos.org:29418/$PFX$PROJECT
+        git remote add lineage ssh://review.portalrom.org:29418/$PFX$PROJECT
     else
-        git remote add lineage ssh://$LINEAGE_USER@review.lineageos.org:29418/$PFX$PROJECT
+        git remote add lineage ssh://$LINEAGE_USER@review.portalrom.org:29418/$PFX$PROJECT
     fi
     echo "Remote 'lineage' created"
 }
@@ -448,7 +448,7 @@ function lineagegerrit() {
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.review.lineageos.org.username`
+    local user=`git config --get review.review.portalrom.org.username`
     local review=`git config --get remote.github.review`
     local project=`git config --get remote.github.projectname`
     local command=$1
@@ -705,7 +705,7 @@ function lineagerebase() {
     echo "Bringing it up to date..."
     repo sync .
     echo "Fetching change..."
-    git fetch "http://review.lineageos.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
+    git fetch "http://review.portalrom.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
     if [ "$?" != "0" ]; then
         echo "Error cherry-picking. Not uploading!"
         return
