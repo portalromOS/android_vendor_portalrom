@@ -86,7 +86,7 @@ include vendor/portalrom/config/lineage_audio.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
-include vendor/portalrom/config/lineage_sdk_common.mk
+include vendor/portalrom/config/portalrom_sdk_common.mk
 endif
 
 # Do not include art debug targets
