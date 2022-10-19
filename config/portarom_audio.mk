@@ -1,5 +1,5 @@
 #
-# Lineage Audio Files
+# PortalRom Audio Files
 #
 
 ALARM_PATH := vendor/portalrom/prebuilt/common/media/audio/alarms
