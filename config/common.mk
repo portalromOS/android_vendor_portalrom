@@ -28,10 +28,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/portalrom/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/portalrom/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/portalrom/prebuilt/common/bin/50-lineage.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-lineage.sh
+    vendor/portalrom/prebuilt/common/bin/50-portalrom.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-portalrom.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/addon.d/50-lineage.sh
+    system/addon.d/50-portalrom.sh
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
@@ -50,13 +50,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-# Lineage-specific broadcast actions whitelist
+# portalrom-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
-    vendor/portalrom/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lineage-sysconfig.xml
+    vendor/portalrom/config/permissions/portalrom-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/portalrom-sysconfig.xml
 
-# Lineage-specific init rc file
+# portalrom-specific init rc file
 PRODUCT_COPY_FILES += \
-    vendor/portalrom/prebuilt/common/etc/init/init.lineage-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-system_ext.rc
+    vendor/portalrom/prebuilt/common/etc/init/init.portalrom-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.portalrom-system_ext.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -70,7 +70,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is Lineage!
+# This is portalrom!
 PRODUCT_COPY_FILES += \
     vendor/portalrom/config/permissions/org.portalrom.android.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.portalrom.android.xml
 
@@ -81,11 +81,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Include AOSP audio files
 include vendor/portalrom/config/aosp_audio.mk
 
-# Include Lineage audio files
-include vendor/portalrom/config/lineage_audio.mk
+# Include portalrom audio files
+include vendor/portalrom/config/portalrom_audio.mk
 
-ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
-# Lineage SDK
+ifneq ($(TARGET_DISABLE_PORTALROM_SDK), true)
+# PortalRom SDK
 include vendor/portalrom/config/portalrom_sdk_common.mk
 endif
 
@@ -106,27 +106,27 @@ TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
-# Lineage packages
+# portalrom packages
 PRODUCT_PACKAGES += \
-    LineageParts \
-    LineageSettingsProvider \
-    LineageSetupWizard \
+    PortalRomParts \
+    PortalRomSettingsProvider \
+    PortalRomSetupWizard \
     Updater
 
 PRODUCT_COPY_FILES += \
-    vendor/portalrom/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
+    vendor/portalrom/prebuilt/common/etc/init/init.portalrom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.portalrom-updater.rc
 
 # Themes
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageThemesStub \
+    PortalRomBlackTheme \
+    PortalRomThemesStub \
     ThemePicker
 
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Extra tools in Lineage
+# Extra tools in PortalRom
 PRODUCT_PACKAGES += \
     7z \
     bash \
