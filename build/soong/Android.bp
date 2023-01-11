@@ -52,7 +52,7 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
-    name: "disable_postrender_cleanup_portal",
+    name: "disable_postrender_cleanup",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["disable_postrender_cleanup"],
@@ -69,7 +69,7 @@ disable_postrender_cleanup {
 }
 
 soong_config_module_type {
-    name: "gralloc_10_usage_bits_portal",
+    name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["additional_gralloc_10_usage_bits"],
@@ -86,7 +86,7 @@ gralloc_10_usage_bits {
 }
 
 soong_config_module_type {
-    name: "target_process_sdk_version_overrides_portal",
+    name: "target_process_sdk_version_overrides",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["target_process_sdk_version_override"],
@@ -103,7 +103,7 @@ target_process_sdk_version_overrides {
 }
 
 soong_config_module_type {
-    name: "target_shim_libs_portal",
+    name: "target_shim_libs",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["target_ld_shim_libs"],
@@ -120,7 +120,7 @@ target_shim_libs {
 }
 
 soong_config_module_type {
-    name: "vendor_init_portal",
+    name: "vendor_init",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["target_init_vendor_lib"],
@@ -137,7 +137,7 @@ vendor_init {
 }
 
 soong_config_module_type {
-    name: "surfaceflinger_udfps_lib_portal",
+    name: "surfaceflinger_udfps_lib",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["target_surfaceflinger_udfps_lib"],
@@ -158,7 +158,7 @@ surfaceflinger_udfps_lib {
 }
 
 soong_config_module_type {
-    name: "trust_usb_control_portal",
+    name: "trust_usb_control",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: [
@@ -185,7 +185,7 @@ trust_usb_control {
 }
 
 soong_config_module_type {
-    name: "ignores_ftp_pptp_conntrack_failure_defaults_portal",
+    name: "ignores_ftp_pptp_conntrack_failure_defaults",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["ignores_ftp_pptp_conntrack_failure"],
@@ -202,7 +202,7 @@ ignores_ftp_pptp_conntrack_failure_defaults {
 }
 
 soong_config_module_type {
-    name: "needs_camera_boottime_portal",
+    name: "needs_camera_boottime",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["needs_camera_boottime"],
@@ -219,7 +219,7 @@ needs_camera_boottime {
 }
 
 soong_config_module_type {
-    name: "needs_netd_direct_connect_rule_portal",
+    name: "needs_netd_direct_connect_rule",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["needs_netd_direct_connect_rule"],
@@ -236,7 +236,7 @@ needs_netd_direct_connect_rule {
 }
 
 soong_config_module_type {
-    name: "legacy_hw_disk_encryption_portal",
+    name: "legacy_hw_disk_encryption",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["legacy_hw_disk_encryption"],
@@ -253,7 +253,7 @@ legacy_hw_disk_encryption {
 }
 
 soong_config_module_type {
-    name: "no_cameraserver_portal",
+    name: "no_cameraserver",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["has_legacy_camera_hal1"],
@@ -275,7 +275,7 @@ no_cameraserver {
 }
 
 soong_config_module_type {
-    name: "camera_in_mediaserver_portal",
+    name: "camera_in_mediaserver",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["has_legacy_camera_hal1"],
@@ -303,7 +303,7 @@ camera_in_mediaserver {
 }
 
 soong_config_module_type {
-    name: "has_memfd_backport_portal",
+    name: "has_memfd_backport",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["has_memfd_backport"],
@@ -320,7 +320,7 @@ has_memfd_backport {
 }
 
 soong_config_module_type {
-    name: "bootloader_message_offset_portal",
+    name: "bootloader_message_offset",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["bootloader_message_offset"],
@@ -337,7 +337,7 @@ bootloader_message_offset {
 }
 
 soong_config_module_type {
-    name: "camera_parameter_library_portal",
+    name: "camera_parameter_library",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     value_variables: ["uses_camera_parameter_lib"],
@@ -354,7 +354,7 @@ camera_parameter_library {
 }
 
 soong_config_module_type {
-    name: "egl_display_array_portal",
+    name: "egl_display_array",
     module_type: "cc_defaults",
     config_namespace: "portalromGlobalVars",
     bool_variables: ["uses_egl_display_array"],
@@ -372,7 +372,7 @@ egl_display_array {
 
 // NVIDIA specific config modules
 soong_config_module_type {
-    name: "nvidia_enhancements_portal",
+    name: "nvidia_enhancements",
     module_type: "cc_defaults",
     config_namespace: "portalromNvidiaVars",
     bool_variables: ["uses_nvidia_enhancements"],
@@ -390,7 +390,7 @@ nvidia_enhancements {
 
 // QCOM specific config modules
 soong_config_module_type {
-    name: "librmnetctl_pre_uplink_portal",
+    name: "librmnetctl_pre_uplink",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["uses_pre_uplink_features_netmgrd"],
@@ -407,7 +407,7 @@ librmnetctl_pre_uplink {
 }
 
 soong_config_module_type {
-    name: "extended_compress_format_portal",
+    name: "extended_compress_format",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["supports_extended_compress_format"],
@@ -424,7 +424,7 @@ extended_compress_format {
 }
 
 soong_config_module_type {
-    name: "vold_hw_fde_portal",
+    name: "vold_hw_fde",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["supports_hw_fde"],
@@ -447,7 +447,7 @@ vold_hw_fde {
 }
 
 soong_config_module_type {
-    name: "vold_hw_fde_perf_portal",
+    name: "vold_hw_fde_perf",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["supports_hw_fde_perf"],
@@ -468,7 +468,7 @@ vold_hw_fde_perf {
 }
 
 soong_config_module_type {
-    name: "qti_cryptfshw_qsee_portal",
+    name: "qti_cryptfshw_qsee",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["should_wait_for_qsee"],
@@ -485,7 +485,7 @@ qti_cryptfshw_qsee {
 }
 
 soong_config_module_type {
-    name: "surfaceflinger_qcom_extensions_portal",
+    name: "surfaceflinger_qcom_extensions",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     value_variables: ["qcom_display_headers_namespace"],
@@ -506,7 +506,7 @@ surfaceflinger_qcom_extensions {
 }
 
 soong_config_module_type {
-    name: "stagefright_qcom_legacy_portal",
+    name: "stagefright_qcom_legacy",
     module_type: "cc_defaults",
     config_namespace: "portalromQcomVars",
     bool_variables: ["uses_qcom_bsp_legacy"],
