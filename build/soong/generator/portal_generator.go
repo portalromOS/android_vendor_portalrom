@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package generator
+package portal_generator
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ func init() {
 var String = proptools.String
 
 var (
-	pctx = android.NewPackageContext("android/soong/generator")
+	pctx = android.NewPackageContext("android/soong/portal_generator")
 )
 
 type HostToolProvider interface {
@@ -265,7 +265,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	dummyDep := android.PathForModuleGen(ctx, ".dummy_dep")
 
 	genDir := android.PathForModuleGen(ctx)
-	manifestPath := android.PathForModuleOut(ctx, "generator.sbox.textproto")
+	manifestPath := android.PathForModuleOut(ctx, "portal_generator.sbox.textproto")
 
 	// Use a RuleBuilder to create a rule that runs the command inside an sbox sandbox.
 	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath).SandboxTools()
@@ -280,7 +280,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 
 	g.outputDeps = append(g.outputDeps, dummyDep)
 
-	rule.Build("generator", "generate")
+	rule.Build("portal_generator", "generate")
 }
 
 func NewGenerator() *Module {

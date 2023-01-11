@@ -11,8 +11,8 @@ bootstrap_go_package {
         "soong-shared",
     ],
     srcs: [
-        "generator/generator.go",
-        "generator/variables.go",
+        "portal_generator/generator.go",
+        "portal_generator/variables.go",
     ],
     pluginFor: ["soong_build"],
 }

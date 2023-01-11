@@ -1,4 +1,4 @@
-package generator
+package portal_generator
 
 import (
 	"fmt"
