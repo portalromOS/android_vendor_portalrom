@@ -2,7 +2,7 @@
 
 bootstrap_go_package {
     name: "soong-portal-generator",
-    pkgPath: "portal/soong/generator",
+    pkgPath: "portalrom/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
