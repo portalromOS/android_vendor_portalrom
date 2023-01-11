@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TrebuchetOverlay",
+    name: "TrebuchetOverlay_portal",
     product_specific: true,
 }
