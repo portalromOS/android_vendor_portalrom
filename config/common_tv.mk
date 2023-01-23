@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/portalrom/config/common.mk)
 
 # Inherit Lineage atv device tree
-$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+$(call inherit-product, device/portalrom/atv/portalrom_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
@@ -10,6 +10,6 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    LineageCustomizer
+    PortalRomCustomizer
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/portalrom/overlay/tv

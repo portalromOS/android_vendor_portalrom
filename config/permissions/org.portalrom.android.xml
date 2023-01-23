@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<!-- This feature shows that this is LineageOS -->
+<!-- This feature shows that this is Portal -->
 <permissions>
     <feature name="org.portalrom.android" />
 </permissions>

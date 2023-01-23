@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2018-2020 The PortalRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,15 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/portalrom/build/target/product/lineage_generic_car_target.mk
+$(call inherit-product, device/generic/common/gsi_arm64.mk)
 
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
+include vendor/portalrom/build/target/product/portalrom_generic_target.mk
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_arm64.mk)
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := lineage_sdk_car_arm64
-
-PRODUCT_SDK_ADDON_NAME := lineage
-PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
+PRODUCT_NAME := portalrom_gsi_arm64
