@@ -1,4 +1,4 @@
-# Inherit common mobile Lineage stuff
+# Inherit common mobile PORTALROM stuff
 $(call inherit-product, vendor/portalrom/config/common.mk)
 
 # Default notification/alarm sounds
@@ -33,9 +33,9 @@ endif
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifneq ($(WITH_PORTALROM_CHARGER),false)
 PRODUCT_PACKAGES += \
-    lineage_charger_animation
+    portalrom_charger_animation
 endif
 
 # Customizations
@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
-    LineageNavigationBarNoHint \
+    PortalRomNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Media

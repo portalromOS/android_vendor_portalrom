@@ -4,22 +4,21 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# PortalRom System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.portalrom.version=$(PORTALROM_VERSION) \
+    ro.portalrom.releasetype=$(PORTALROM_BUILDTYPE) \
+    ro.portalrom.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(PORTALROM_VERSION) 
 
-# LineageOS Platform Display Version
+# PortalRom Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.portalrom.display.version=$(PORTALROM_DISPLAY_VERSION)
 
-# LineageOS Platform SDK Version
+# PortalRom Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.portalrom.build.version.plat.sdk=$(PORTALROM_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# PortalRom Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.portalrom.build.version.plat.rev=$(PORTALROM_PLATFORM_REV)

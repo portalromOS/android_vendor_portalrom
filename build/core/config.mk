@@ -1,5 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2023 The PortalRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LINEAGE_SRC_API_DIR := $(TOPDIR)prebuilts/lineage-sdk/api
-INTERNAL_LINEAGE_PLATFORM_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/lineage_public_api.txt
-INTERNAL_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/lineage_removed.txt
-FRAMEWORK_LINEAGE_PLATFORM_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_current.txt
-FRAMEWORK_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_removed.txt
-FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/portalrom/build/core/apicheck_msg_current.txt
+PORTALROM_SRC_API_DIR := $(TOPDIR)prebuilts/portalrom-sdk/api
+INTERNAL_PORTALROM_PLATFORM_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/portalrom_public_api.txt
+INTERNAL_PORTALROM_PLATFORM_REMOVED_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/portalrom_removed.txt
+FRAMEWORK_PORTALROM_PLATFORM_API_FILE := $(TOPDIR)portalrom-sdk/api/portalrom_current.txt
+FRAMEWORK_PORTALROM_PLATFORM_REMOVED_API_FILE := $(TOPDIR)portalrom-sdk/api/portalrom_removed.txt
+FRAMEWORK_PORTALROM_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/portalrom/build/core/apicheck_msg_current.txt
 
 # Rules for QCOM targets
 include $(TOPDIR)vendor/portalrom/build/core/qcom_target.mk
