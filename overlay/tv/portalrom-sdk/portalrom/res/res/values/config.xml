@@ -33,7 +33,7 @@
             8 - Last app
             9 - Toggle split screen
          This needs to match the enums in
-         sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java.
+         sdk/src/java/org/portalrom/internal/util/DeviceKeysConstants.java.
     -->
     <integer name="config_doubleTapOnHomeBehavior">2</integer>
 
