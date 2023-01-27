@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# PortalRom OTA update package
 
 PORTALROM_TARGET_PACKAGE := $(PRODUCT_OUT)/portalrom-$(PORTALROM_VERSION).zip
 
