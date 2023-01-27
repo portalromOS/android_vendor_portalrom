@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2023  The LineageOS Project
+# Copyright (C) 2023  The PortalRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -152,12 +152,12 @@ def fetch_query(remote_url, query):
 
 
 if __name__ == '__main__':
-    # Default to LineageOS Gerrit
+    # Default to PortalRom Gerrit
     default_gerrit = 'https://review.lineageos.org'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from LineageOS's Gerrit instance (or any gerrit instance of your choosing)
+        patches from PortalRom's Gerrit instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
