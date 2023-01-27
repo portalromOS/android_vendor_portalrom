@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-# Copyright (C) 2012-2013, The CyanogenMod Project
-#           (C) 2017-2018,2020-2021, The PortalRom Project
+# Copyright (C) 2023, The PortalRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -164,9 +163,9 @@ def is_in_manifest(projectpath):
         if localpath.get("path") == projectpath:
             return True
 
-    # ... and don't forget the lineage snippet
+    # ... and don't forget the portalrom snippet
     try:
-        lm = ElementTree.parse(".repo/manifests/snippets/lineage.xml")
+        lm = ElementTree.parse(".repo/manifests/snippets/portal.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
@@ -216,7 +215,7 @@ def add_to_manifest(repositories, fallback_branch = None):
 
 def fetch_dependencies(repo_path, fallback_branch = None):
     print('Looking for dependencies in %s' % repo_path)
-    dependencies_path = repo_path + '/lineage.dependencies'
+    dependencies_path = repo_path + '/portalrom.dependencies'
     syncable_repos = []
     verify_repos = []
 
